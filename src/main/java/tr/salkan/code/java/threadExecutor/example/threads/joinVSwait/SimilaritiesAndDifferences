@@ -1,0 +1,14 @@
+Similarities between wait() and join()
+
+		The method wait() and join() both are used to pause the current thread in Java.
+		Both wait() and join() can be interrupted by calling interrupt() method in Java.
+		Both wait() and join() are a non-static method.
+		Both wait() and join() are overloaded in Java. wait() and join() which without timeout as well as accepts a timeout parameter.
+
+
+Difference between wait() and join() method
+
+		Most obvious difference, both are present different packages, the wait() method is declared in java.lang.Object class while join() is declared in java.lang.Thread class.
+		The wait() is used for inter-thread communication while the join() is used for adding sequencing between multiple threads, one thread starts execution after first thread execution finished.
+		We can start a waiting thread (went into this state by calling wait()) by using notify() and notifyAll() method but we can not break the waiting imposed by join without unless or interruption the thread on which join is called has execution finished.
+		One most important difference between wait() and join() that is wait() must be called from synchronized context i.e. synchronized block or method otherwise it will throw IllegalMonitorStateException but On the other hand, we can call join() method with and without synchronized context in Java
