@@ -1,0 +1,7 @@
+1) Cached thread pool: keeps a number of alive threads and creates new ones as needed.
+
+2) Fixed thread pool: limits the maximum number of concurrent threads. Additional tasks are waiting in a queue.
+
+3) Single-threaded pool: keeps only one thread executing one task at a time.
+
+4) Fork/Join pool: a special thread pool that uses the Fork/Join framework to take advantages of multiple processors to perform heavy work faster by breaking the work into smaller pieces recursively.
