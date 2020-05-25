@@ -1,0 +1,12 @@
+Link : http://www.bigsoft.co.uk/blog/2009/11/27/rules-of-a-threadpoolexecutor-pool-size
+
+
+*** If the number of threads is less than the corePoolSize, create a new Thread to run a new task.
+
+*** If the number of threads is equal (or greater than) the corePoolSize, put the task into the queue.
+
+*** If the queue is full, and the number of threads is less than the maxPoolSize, create a new thread to run tasks in.
+
+*** If the queue is full, and the number of threads is greater than or equal to maxPoolSize, reject the task.
+
+*** The long and the short of it is that new threads are only created when the queue fills up, so if you're using an unbounded queue then the number of threads will not exceed corePoolSize.
