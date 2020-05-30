@@ -18,7 +18,7 @@ public class ExampleNoResult {
         Future<?> futureResult = es.submit(runnableObject);
 
 
-        System.out.println("runnable submitted");
+        System.out.println("runnable suabmitted");
 
         System.out.println("getting result");
         Object o = futureResult.get();
