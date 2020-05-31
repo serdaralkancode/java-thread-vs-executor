@@ -1,0 +1,11 @@
+CountDownLatch -> Java 1.5
+
+But using
+
+CompletableFuture
+
+**** CompletableFuture.allOf(future1,future2)
+
+      or
+
+     future1.thenAcceptBothAsync(future2, (x,y) -> System.out.println("Result = " + (x + y))
